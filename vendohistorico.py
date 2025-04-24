@@ -3,6 +3,5 @@ print("boa tarde")
 
 print("boa noite")
 
-
-
-bom dia  tggudo bem
+def aula():
+    print("aula")
