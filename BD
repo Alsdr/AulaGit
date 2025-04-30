@@ -1,0 +1,31 @@
+CREATE TABLE Aluno(
+    aluno_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    nome VARCHAR(63),
+    telefone VARCHAR(10),
+    email VARCHAR(255),
+    matricula VARCHAR(63)
+)
+
+ALTER TABLE Aluno
+ADD matricula VARCHAR(255);
+
+SELECT nome,matricula FROM Aluno
+WHERE nome = 'Beltrano';
+
+SELECT nome,Aluno.matricula FROM Aluno
+WHERE aluno_id IN (1,3);
+--FILTRAR SOMENTE ALUNO ID 2 E 3 NA POSICAO DA TUPLA
+
+--APAGA TABELA
+DROP TABLE Aluno;
+
+--INSERE VALORES NA TABELA
+INSERT INTO ALUNO(matricula)
+VALUES('312321');
+
+ INSERT INTO Aluno (nome, telefone, email, matricula)
+ VALUES ('Marlos', '9296789123','marlos@gmail.com','2313'),
+        ('Fulano', '9291232323','fulano@gmail.com','1233'),
+        ('Beltrano', '9296231321','beltrano@gmail.com','3342');
+
+SELECT * FROM Aluno;
