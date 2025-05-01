@@ -55,4 +55,13 @@ SET nome = 'Steffany', email = 'ste@gmail.com'
 SELECT DISTINCT nome FROM Aluno;
 --WHERE COMPOSTO AND
 
+SELECT AVG(idade) FROM Aluno; --MEDIA
+SELECT SUM(idade) FROM Aluno; -- SOMA
+SELECT COUNT (*) FROM  Aluno; --
+SELECT max(idade) FROM Aluno; -- MAX IDADE
+SELECT MIN(idade) FROM Aluno; -- MIN IDADE
+
+SELECT COUNT(*), Genero FROM Aluno GROUP BY Aluno.Genero;
+--   ATRIBUTO 1   ATRIBUTO 2
+
 SELECT * FROM Aluno;
