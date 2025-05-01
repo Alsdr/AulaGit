@@ -28,4 +28,31 @@ VALUES('312321');
         ('Fulano', '9291232323','fulano@gmail.com','1233'),
         ('Beltrano', '9296231321','beltrano@gmail.com','3342');
 
+UPDATE Aluno
+SET nome = 'Carlinhos'
+WHERE aluno_id = 3;
+
+DELETE FROM Aluno
+WHERE nome = 'Carlinhos';
+
+INSERT INTO Aluno(nome, telefone, email, matricula,Genero, idade)
+VALUES('Beltrano', '9296231321','beltrano@gmail.com','3342','Feminino','23');
+
+ALTER TABLE Aluno
+ADD COLUMN Genero VARCHAR(10);
+
+ALTER TABLE Aluno
+ADD COLUMN idade INT;
+
+UPDATE Aluno
+SET nome = 'Steffany', email = 'ste@gmail.com'
+    WHERE aluno_id IN (5);
+
+-- INSERT INTO Aluno(Genero)
+-- VALUES ('masculino')
+--        WHERE nome = 'Marlos';
+
+SELECT DISTINCT nome FROM Aluno;
+--WHERE COMPOSTO AND
+
 SELECT * FROM Aluno;
