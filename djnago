@@ -3,3 +3,4 @@ python -m venv .venv
 pip install django
 pip freeze > requirements.txt
 django-admin startproject exemplo
+.
