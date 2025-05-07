@@ -3,4 +3,8 @@ python -m venv .venv
 pip install django
 pip freeze > requirements.txt
 django-admin startproject exemplo
-.
+
+database
+    schema
+
+pip install psycopg2-binary
